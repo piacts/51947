@@ -1,0 +1,27 @@
+{
+  "name": "regex-analyzer",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": ["ANTLR4", "regex", "parser"],
+  "author": "Pía Cortes",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.13.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piacts/51947.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piacts/51947/issues"
+  },
+  "homepage": "https://github.com/piacts/51947#readme",
+  "description": "A project to analyze regular expressions using ANTLR4 and JavaScript"
+}
+
