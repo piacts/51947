@@ -19,7 +19,7 @@ Clona este repositorio: git clone https://github.com/piacts/51947
 
 # Ejecución 
 1. **Archivo de Entrada**: Escribí una expresión regular válida o inválida dentro del archivo `input.txt`.
-Por ejemplo: (a|b|c)*d+(ef|gh)?i{2,4} (válida) o [a-z-0-9] (inválida)
+Por ejemplo: (a|b)c*} (válida) o [a-z-0-9] (inválida)
 2. **Ejecutar la Aplicación**: Corré el programa utilizando Node.js con el siguiente comando: node index
 Para que se genere y visualice el árbol de derivación, es necesario iniciar el modo de depuración. Esto puede hacerse presionando F5 o manualmente desde Visual Studio Code, haciendo clic en el botón "Depurar".
 3. **Ejemplo de salida**: El programa mostrará:
@@ -32,22 +32,26 @@ Para que se genere y visualice el árbol de derivación, es necesario iniciar el
 
 *Tabla de tokens y lexemas:*
 
-<img width="298" alt="image" src="https://github.com/user-attachments/assets/667457a2-703b-4475-a693-0b355536e918" />
+<img width="718" alt="image" src="https://github.com/user-attachments/assets/e37f3804-7170-45aa-90d7-9805a2432fd3" />
+
 
 *Árbol de derivación:*
 
-<img width="637" alt="image" src="https://github.com/user-attachments/assets/baa9ac52-6c1f-4613-ac0a-38210a8d9cd8" />
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/a7e9fc00-5cd5-43c4-a745-ce0fe4dfb820" />
+
 
 ## &nbsp;
 **En el caso de un input incorrecto**:
 
 *Tabla de tokens y lexemas:*
 
-<img width="365" alt="image" src="https://github.com/user-attachments/assets/661aae22-9063-4928-8c02-6c0e25fc530e" />
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/2037dafe-03bd-4b1a-af3d-7e78c54016fd" />
+
 
 *Árbol de derivación:*
 
-<img width="478" alt="image" src="https://github.com/user-attachments/assets/dd2f3185-c1f2-41a5-a79f-f284cd31da14" />
+<img width="515" alt="image" src="https://github.com/user-attachments/assets/cd41f012-41ab-44ec-bf94-95aa386dc37a" />
+
 
 ## &nbsp;
 4. **Archivos de Ejemplo**:
