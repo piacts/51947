@@ -1,4 +1,4 @@
-// Generated from regex.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Asus/antlr-regex-project/antlr-regex-project/regex.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;

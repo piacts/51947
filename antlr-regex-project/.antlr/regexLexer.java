@@ -1,4 +1,4 @@
-// Generated from regex.g4 by ANTLR 4.13.2
+// Generated from c:/Users/Asus/antlr-regex-project/antlr-regex-project/regex.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -10,15 +10,14 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
 public class regexLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, CHAR=2, NUMBER=3, DASH=4, CARET=5, STAR=6, PLUS=7, QUESTION=8, 
-		LPAREN=9, RPAREN=10, LBRACK=11, RBRACK=12, LBRACE=13, RBRACE=14, COMMA=15, 
-		WS=16;
+		NUMBER=1, COMMA=2, CHAR=3, PIPE=4, DASH=5, CARET=6, STAR=7, PLUS=8, QUESTION=9, 
+		LPAREN=10, RPAREN=11, LBRACK=12, RBRACK=13, LBRACE=14, RBRACE=15, WS=16;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -29,24 +28,23 @@ public class regexLexer extends Lexer {
 
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"T__0", "CHAR", "NUMBER", "DASH", "CARET", "STAR", "PLUS", "QUESTION", 
-			"LPAREN", "RPAREN", "LBRACK", "RBRACK", "LBRACE", "RBRACE", "COMMA", 
-			"WS"
+			"NUMBER", "COMMA", "CHAR", "PIPE", "DASH", "CARET", "STAR", "PLUS", "QUESTION", 
+			"LPAREN", "RPAREN", "LBRACK", "RBRACK", "LBRACE", "RBRACE", "WS"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'|'", null, null, "'-'", "'^'", "'*'", "'+'", "'?'", "'('", "')'", 
-			"'['", "']'", "'{'", "'}'", "','"
+			null, null, "','", null, "'|'", "'-'", "'^'", "'*'", "'+'", "'?'", "'('", 
+			"')'", "'['", "']'", "'{'", "'}'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, null, "CHAR", "NUMBER", "DASH", "CARET", "STAR", "PLUS", "QUESTION", 
-			"LPAREN", "RPAREN", "LBRACK", "RBRACK", "LBRACE", "RBRACE", "COMMA", 
+			null, "NUMBER", "COMMA", "CHAR", "PIPE", "DASH", "CARET", "STAR", "PLUS", 
+			"QUESTION", "LPAREN", "RPAREN", "LBRACK", "RBRACK", "LBRACE", "RBRACE", 
 			"WS"
 		};
 	}
@@ -114,8 +112,8 @@ public class regexLexer extends Lexer {
 		"\u0007\u0004\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007"+
 		"\u0007\u0007\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b"+
 		"\u0007\u000b\u0002\f\u0007\f\u0002\r\u0007\r\u0002\u000e\u0007\u000e\u0002"+
-		"\u000f\u0007\u000f\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001"+
-		"\u0002\u0004\u0002\'\b\u0002\u000b\u0002\f\u0002(\u0001\u0003\u0001\u0003"+
+		"\u000f\u0007\u000f\u0001\u0000\u0004\u0000#\b\u0000\u000b\u0000\f\u0000"+
+		"$\u0001\u0001\u0001\u0001\u0001\u0002\u0001\u0002\u0001\u0003\u0001\u0003"+
 		"\u0001\u0004\u0001\u0004\u0001\u0005\u0001\u0005\u0001\u0006\u0001\u0006"+
 		"\u0001\u0007\u0001\u0007\u0001\b\u0001\b\u0001\t\u0001\t\u0001\n\u0001"+
 		"\n\u0001\u000b\u0001\u000b\u0001\f\u0001\f\u0001\r\u0001\r\u0001\u000e"+
@@ -123,7 +121,7 @@ public class regexLexer extends Lexer {
 		"\u000f\u0001\u000f\u0000\u0000\u0010\u0001\u0001\u0003\u0002\u0005\u0003"+
 		"\u0007\u0004\t\u0005\u000b\u0006\r\u0007\u000f\b\u0011\t\u0013\n\u0015"+
 		"\u000b\u0017\f\u0019\r\u001b\u000e\u001d\u000f\u001f\u0010\u0001\u0000"+
-		"\u0003\b\u0000!!#&,,.>@Z__az~~\u0001\u000009\u0003\u0000\t\n\r\r  J\u0000"+
+		"\u0003\u0001\u000009\b\u0000!!#&,,.>@Z__az~~\u0003\u0000\t\n\r\r  J\u0000"+
 		"\u0001\u0001\u0000\u0000\u0000\u0000\u0003\u0001\u0000\u0000\u0000\u0000"+
 		"\u0005\u0001\u0000\u0000\u0000\u0000\u0007\u0001\u0000\u0000\u0000\u0000"+
 		"\t\u0001\u0000\u0000\u0000\u0000\u000b\u0001\u0000\u0000\u0000\u0000\r"+
@@ -131,30 +129,30 @@ public class regexLexer extends Lexer {
 		"\u0001\u0000\u0000\u0000\u0000\u0013\u0001\u0000\u0000\u0000\u0000\u0015"+
 		"\u0001\u0000\u0000\u0000\u0000\u0017\u0001\u0000\u0000\u0000\u0000\u0019"+
 		"\u0001\u0000\u0000\u0000\u0000\u001b\u0001\u0000\u0000\u0000\u0000\u001d"+
-		"\u0001\u0000\u0000\u0000\u0000\u001f\u0001\u0000\u0000\u0000\u0001!\u0001"+
-		"\u0000\u0000\u0000\u0003#\u0001\u0000\u0000\u0000\u0005&\u0001\u0000\u0000"+
+		"\u0001\u0000\u0000\u0000\u0000\u001f\u0001\u0000\u0000\u0000\u0001\"\u0001"+
+		"\u0000\u0000\u0000\u0003&\u0001\u0000\u0000\u0000\u0005(\u0001\u0000\u0000"+
 		"\u0000\u0007*\u0001\u0000\u0000\u0000\t,\u0001\u0000\u0000\u0000\u000b"+
 		".\u0001\u0000\u0000\u0000\r0\u0001\u0000\u0000\u0000\u000f2\u0001\u0000"+
 		"\u0000\u0000\u00114\u0001\u0000\u0000\u0000\u00136\u0001\u0000\u0000\u0000"+
 		"\u00158\u0001\u0000\u0000\u0000\u0017:\u0001\u0000\u0000\u0000\u0019<"+
 		"\u0001\u0000\u0000\u0000\u001b>\u0001\u0000\u0000\u0000\u001d@\u0001\u0000"+
-		"\u0000\u0000\u001fC\u0001\u0000\u0000\u0000!\"\u0005|\u0000\u0000\"\u0002"+
-		"\u0001\u0000\u0000\u0000#$\u0007\u0000\u0000\u0000$\u0004\u0001\u0000"+
-		"\u0000\u0000%\'\u0007\u0001\u0000\u0000&%\u0001\u0000\u0000\u0000\'(\u0001"+
-		"\u0000\u0000\u0000(&\u0001\u0000\u0000\u0000()\u0001\u0000\u0000\u0000"+
-		")\u0006\u0001\u0000\u0000\u0000*+\u0005-\u0000\u0000+\b\u0001\u0000\u0000"+
-		"\u0000,-\u0005^\u0000\u0000-\n\u0001\u0000\u0000\u0000./\u0005*\u0000"+
-		"\u0000/\f\u0001\u0000\u0000\u000001\u0005+\u0000\u00001\u000e\u0001\u0000"+
-		"\u0000\u000023\u0005?\u0000\u00003\u0010\u0001\u0000\u0000\u000045\u0005"+
-		"(\u0000\u00005\u0012\u0001\u0000\u0000\u000067\u0005)\u0000\u00007\u0014"+
-		"\u0001\u0000\u0000\u000089\u0005[\u0000\u00009\u0016\u0001\u0000\u0000"+
-		"\u0000:;\u0005]\u0000\u0000;\u0018\u0001\u0000\u0000\u0000<=\u0005{\u0000"+
-		"\u0000=\u001a\u0001\u0000\u0000\u0000>?\u0005}\u0000\u0000?\u001c\u0001"+
-		"\u0000\u0000\u0000@A\u0005,\u0000\u0000A\u001e\u0001\u0000\u0000\u0000"+
+		"\u0000\u0000\u001fC\u0001\u0000\u0000\u0000!#\u0007\u0000\u0000\u0000"+
+		"\"!\u0001\u0000\u0000\u0000#$\u0001\u0000\u0000\u0000$\"\u0001\u0000\u0000"+
+		"\u0000$%\u0001\u0000\u0000\u0000%\u0002\u0001\u0000\u0000\u0000&\'\u0005"+
+		",\u0000\u0000\'\u0004\u0001\u0000\u0000\u0000()\u0007\u0001\u0000\u0000"+
+		")\u0006\u0001\u0000\u0000\u0000*+\u0005|\u0000\u0000+\b\u0001\u0000\u0000"+
+		"\u0000,-\u0005-\u0000\u0000-\n\u0001\u0000\u0000\u0000./\u0005^\u0000"+
+		"\u0000/\f\u0001\u0000\u0000\u000001\u0005*\u0000\u00001\u000e\u0001\u0000"+
+		"\u0000\u000023\u0005+\u0000\u00003\u0010\u0001\u0000\u0000\u000045\u0005"+
+		"?\u0000\u00005\u0012\u0001\u0000\u0000\u000067\u0005(\u0000\u00007\u0014"+
+		"\u0001\u0000\u0000\u000089\u0005)\u0000\u00009\u0016\u0001\u0000\u0000"+
+		"\u0000:;\u0005[\u0000\u0000;\u0018\u0001\u0000\u0000\u0000<=\u0005]\u0000"+
+		"\u0000=\u001a\u0001\u0000\u0000\u0000>?\u0005{\u0000\u0000?\u001c\u0001"+
+		"\u0000\u0000\u0000@A\u0005}\u0000\u0000A\u001e\u0001\u0000\u0000\u0000"+
 		"BD\u0007\u0002\u0000\u0000CB\u0001\u0000\u0000\u0000DE\u0001\u0000\u0000"+
 		"\u0000EC\u0001\u0000\u0000\u0000EF\u0001\u0000\u0000\u0000FG\u0001\u0000"+
 		"\u0000\u0000GH\u0006\u000f\u0000\u0000H \u0001\u0000\u0000\u0000\u0003"+
-		"\u0000(E\u0001\u0006\u0000\u0000";
+		"\u0000$E\u0001\u0006\u0000\u0000";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

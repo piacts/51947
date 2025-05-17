@@ -1,17 +1,20 @@
 import { Parser } from "antlr4";
-import RegexVisitor from "./generated/RegexVisitor.js";
-import RegexParser from "./generated/RegexParser.js";
+import regexVisitor from "./generated/regexVisitor.js";
+import regexParser from "./generated/regexParser.js";
 
-export class CustomRegexVisitor extends RegexVisitor {
-
+// Importar la gramática generada por ANTLR
+export class CustomregexVisitor extends regexVisitor {
     constructor() {
         super();
     }
 
     visitRegex(ctx) {
-        
-        const terms = ctx.term().map(term => this.visit(term));
-        return terms.join('|');
+        const termResult = this.visit(ctx.term());
+    if (ctx.regex()) {  // Si hay parte derecha después del '|'
+        return termResult + '|' + this.visit(ctx.regex());
+    }
+    return termResult;
+
     }
 
     visitTerm(ctx) {
@@ -68,8 +71,14 @@ export class CustomRegexVisitor extends RegexVisitor {
     }
 
     visitRange(ctx) {
+    if (ctx.CHAR(0) && ctx.CHAR(1)) {
         return ctx.CHAR(0).getText() + "-" + ctx.CHAR(1).getText();
+    } else if (ctx.NUMBER(0) && ctx.NUMBER(1)) {
+        return ctx.NUMBER(0).getText() + "-" + ctx.NUMBER(1).getText();
     }
+    return ""; // Por si acaso
+}
+
 
     visitQuantifier(ctx) {
         if (ctx.STAR()) {
@@ -93,4 +102,6 @@ export class CustomRegexVisitor extends RegexVisitor {
         }
         return "";
     }
+    
 }
+export default CustomregexVisitor;

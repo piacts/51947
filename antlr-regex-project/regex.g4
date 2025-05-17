@@ -29,4 +29,3 @@ LBRACE: '{';
 RBRACE: '}';
 
 WS: [ \t\r\n]+ -> skip; 
-
