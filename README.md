@@ -1,6 +1,6 @@
 # README
 
-Este es un archivo README para el repositorio. A continuación se describe el propósito del proyecto, cómo instalarlo y cómo utilizarlo.
+Este es un archivo README para el repositorio. A continuación, se describe el propósito del proyecto, cómo instalarlo y cómo utilizarlo.
 
 # Descripción
 Este proyecto permite analizar expresiones regulares simples utilizando ANTLR4 y JavaScript, por medio de una gramática personalizada que reconoce expresiones como:
@@ -10,19 +10,21 @@ Este proyecto permite analizar expresiones regulares simples utilizando ANTLR4 y
 - `(a|b)+`
 
 # Requisitos Previos
-1. *Node.js*: Asegurate de tener Node.js instalado en tu sistema.
-2. *ANTLR4*: Debés tener ANTLR4 instalado y correctamente configurado.
+1. *Node.js*: Asegúrate de tener Node.js instalado en tu sistema.
+2. *ANTLR4*: Debes tener ANTLR4 instalado y correctamente configurado.
 3. *Visual Studio Code (opcional)*: Se recomienda para editar y ejecutar el código de forma cómoda.
 
 # Instalación
-Clona este repositorio: git clone https://github.com/piacts/51947
+Clona este repositorio: git clone https://github.com/piacts/51947.git
 
 # Ejecución 
 1. **Archivo de Entrada**: Escribí una expresión regular válida o inválida dentro del archivo `input.txt`.
-Por ejemplo: (a|b)c*} (válida) o [a-z-0-9] (inválida)
-2. **Ejecutar la Aplicación**: Es aconsejable esperar unos segundos para que el programa se inicialice. Luego, corré el programa utilizando Node.js con el siguiente comando: `node index`
+Ejemplos:  
+- `(a|b)c*` (válida)  
+- `[a-z-0-9]` (inválida)
+2. **Ejecutar la Aplicación**: Es aconsejable esperar unos segundos para que el programa se inicialice. Luego, ejecuta el programa utilizando Node.js con el siguiente comando: `node index`
 
-Para que se genere y visualice el árbol de derivación, es necesario iniciar el modo de depuración. Esto puede hacerse presionando F5 o manualmente desde Visual Studio Code, haciendo clic en el botón "Depurar". Es recomedable seleccionar el archivo con la gramática primero.
+Para que se genere y visualice el árbol de derivación, es necesario iniciar el modo de depuración. Esto puede hacerse presionando F5 o manualmente desde Visual Studio Code, haciendo clic en el botón "Depurar". Es recomendable seleccionar el archivo con la gramática primero.
 3. **Ejemplo de salida**: El programa mostrará:
 
 - Una tabla con los tokens y lexemas generados por el lexer.
@@ -63,7 +65,7 @@ Para probar el programa, se pueden utilizar los ejemplos que se encuentran en lo
 - `input_incorrecto_1.txt`
 - `input_incorrecto_2.txt`
 
-Estos archivos contienen expresiones regulares válidas e inválidas respectivamente, y sirven para verificar el funcionamiento del analizador. Solo copiá el contenido de uno de ellos en input.txt antes de ejecutar el programa.
+Estos archivos contienen expresiones regulares válidas e inválidas respectivamente, y sirven para verificar el funcionamiento del analizador. Se debe copiar el contenido de uno de ellos en `input.txt` antes de ejecutar el programa.
 
 # Notas Adicionales
 1. Si el archivo `input.txt` no existe o está vacío, el programa solicitará la expresión regular desde teclado.
