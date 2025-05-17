@@ -17,6 +17,11 @@ Este proyecto permite analizar expresiones regulares simples utilizando ANTLR4 y
 # Instalación
 Clona este repositorio: git clone https://github.com/piacts/51947.git
 
+# Consideración importante al abrir el proyecto
+Al descargar o clonar este repositorio, se generará una carpeta principal llamada `51947`. No se recomienda abrir directamente esta carpeta en Visual Studio Code, ya que no contiene los archivos fuente del proyecto en su raíz.
+
+En su lugar, se debe acceder a la carpeta `51947` y luego seleccionar la subcarpeta `antlr-regex-project`, que es donde se encuentra el proyecto propiamente dicho.
+
 # Ejecución 
 1. **Archivo de Entrada**: Escribí una expresión regular válida o inválida dentro del archivo `input.txt`.
 Ejemplos:  
