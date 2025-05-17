@@ -36,7 +36,7 @@ Ejemplos:
 - Una verificación de si la expresión es válida según la gramática.
 - Un árbol de derivación que representa la estructura sintáctica de la expresión.
 
-**En el caso de un input correcto**:
+**✔ > En el caso de un input correcto**:
 
 *Tabla de tokens y lexemas:*
 
@@ -49,7 +49,7 @@ Ejemplos:
 
 
 ## &nbsp;
-**En el caso de un input incorrecto**:
+**✘ > En el caso de un input incorrecto**:
 
 *Tabla de tokens y lexemas:*
 
