@@ -37,7 +37,7 @@ Ejemplos:
 - Un árbol de derivación que representa la estructura sintáctica de la expresión.
 
 ## &nbsp;
-**✔ > En el caso de un input correcto**:
+**✓ > En el caso de un input correcto**:
 
 *Tabla de tokens y lexemas:*
 
