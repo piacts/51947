@@ -13,7 +13,7 @@ quantifier: '*' | '+' | '?' | '{' NUMBER (COMMA NUMBER?)? '}';
 //tokens
 NUMBER: [0-9]+;
 COMMA: ','; 
-CHAR: [a-zA-Z0-9_~@#$%&=<>!;:,./];  //Caracteres válidos
+CHAR: [a-zA-Z0-9_~@?#%&=<>!;,/];  //Caracteres válidos
 
 PIPE: '|';
 DASH: '-';
