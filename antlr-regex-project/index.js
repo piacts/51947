@@ -76,7 +76,7 @@ async function main() {
         try {
             console.log("> Representación en JavaScript como objeto RegExp:")
             const regexJs = new RegExp(result); 
-            console.log("const regex =", regexJs + ";");
+            console.log("const regex =", regexJs +";");
         } catch (e) {
             console.error("✘ > No se pudo crear un RegExp en JavaScript:", e.message);
 }
