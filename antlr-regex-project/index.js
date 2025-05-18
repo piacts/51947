@@ -74,8 +74,9 @@ async function main() {
         const result = visitor.visit(tree);
         console.log("\n> Expresión reconstruida:", result);
         try {
-            const regexJs = new RegExp(result); // Intentar crear el objeto RegExp
-            console.log("> Representación en JavaScript como objeto RegExp:", regexJs);
+            console.log("> Representación en JavaScript como objeto RegExp:")
+            const regexJs = new RegExp(result); 
+            console.log("const regex =", regexJs + ";");
         } catch (e) {
             console.error("✘ > No se pudo crear un RegExp en JavaScript:", e.message);
 }
