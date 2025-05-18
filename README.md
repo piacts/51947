@@ -12,7 +12,9 @@ Este proyecto permite analizar expresiones regulares simples utilizando ANTLR4 y
 # Requisitos Previos
 1. *Node.js*: Asegúrate de tener Node.js instalado en tu sistema.
 2. *ANTLR4*: Debes tener ANTLR4 instalado y correctamente configurado.
-3. *Visual Studio Code (opcional)*: Se recomienda para editar y ejecutar el código de forma cómoda.
+3. *Java (JDK)*: Es necesario tener Java (JDK) instalado en su computadora.
+4. *GIT*: Requiere tener instalado Git para poder clonar el repositorio.
+5. *Visual Studio Code*: Se recomienda para editar y ejecutar el código de forma cómoda.
 
 # Instalación
 Clona este repositorio: git clone https://github.com/piacts/51947.git
@@ -75,6 +77,7 @@ Estos archivos contienen expresiones regulares válidas e inválidas respectivam
 
 # Notas Adicionales
 1. Si el archivo `input.txt` no existe o está vacío, el programa solicitará la expresión regular desde teclado.
+2. Bibliografía importante: [Guía de Estudio Construcción de Analizador con ANTLR4 + JavaScript.pdf](https://github.com/user-attachments/files/20275587/Guia.de.Estudio.Construccion.de.Analizador.con.ANTLR4.%2B.JavaScript.pdf)
 3. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
 
 # Autor
