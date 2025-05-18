@@ -28,7 +28,7 @@ Ejemplos:
 - `(a|b)c*` (válida)  
 - `[a-z-0-9]` (inválida)
 
-2. **Ejecutar la Aplicación**: Es aconsejable esperar unos segundos para que el programa se inicialice. Luego, ejecuta el programa utilizando Node.js con el siguiente comando: `node index`. Para que se genere y visualice el árbol de derivación, es necesario iniciar el modo de depuración. Esto puede hacerse presionando F5 o manualmente desde Visual Studio Code, haciendo clic en el botón "Depurar". Es recomendable seleccionar el archivo con la gramática primero.
+2. **Ejecutar la Aplicación**: Es aconsejable esperar unos segundos para que el programa se inicialice. Luego, ejecuta el programa utilizando Node.js con el siguiente comando: `node index`. Para que se genere y visualice el árbol de derivación, es necesario iniciar el modo de depuración. Esto puede hacerse presionando F5 o manualmente desde Visual Studio Code, haciendo clic en el botón "Depurar". Es recomendable seleccionar el archivo con la gramática (`regex.g4`) primero.
 
 3. **Ejemplo de salida**: El programa mostrará:
 
