@@ -79,5 +79,7 @@ Estos archivos contienen expresiones regulares válidas e inválidas respectivam
 
 # Autor
 **Nombre y Apellido:** Pía Cortes
+
 **Legajo:** 51947
-**Año:** [2025]
+
+**Año:** 2025
