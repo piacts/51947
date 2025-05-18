@@ -77,3 +77,7 @@ Estos archivos contienen expresiones regulares válidas e inválidas respectivam
 1. Si el archivo `input.txt` no existe o está vacío, el programa solicitará la expresión regular desde teclado.
 3. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
 
+# Autor
+**Nombre y Apellido:** Pía Cortes
+**Legajo:** 51947
+**Año:** [2025]
