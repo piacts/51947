@@ -76,7 +76,7 @@ Para probar el programa, se pueden utilizar los ejemplos que se encuentran en lo
 Estos archivos contienen expresiones regulares válidas e inválidas respectivamente, y sirven para verificar el funcionamiento del analizador. Se debe copiar el contenido de uno de ellos en `input.txt` antes de ejecutar el programa.
 
 # Acerca de la Gramática
-En el archivo titulado "Gramática" se encuentra tanto la gramática original en EBNF (al final del archivo) como su correspondiente traducción al formato compatible con ANTLR. Durante este proceso de adaptación, se realizaron los siguientes ajustes:
+En el archivo titulado "Reglas" se encuentra tanto la gramática original en EBNF (al final del archivo) como su correspondiente traducción al formato compatible con ANTLR. Durante este proceso de adaptación, se realizaron los siguientes ajustes:
 
 - **Definición de CHAR:** En lugar de usar una negación general para excluir metacaracteres (como permite EBNF), se definió explícitamente un conjunto de caracteres válidos en el token CHAR, incluyendo letras, dígitos y símbolos seleccionados: [a-zA-Z0-9_~@?#%&=<>!;,/].
 - **Separación de tokens especiales:** Los símbolos utilizados como operadores o delimitadores en la gramática (por ejemplo, '|', '-', '^', '*') se definieron como tokens independientes para facilitar el análisis y evitar ambigüedades.
