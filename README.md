@@ -17,7 +17,7 @@ Este proyecto permite analizar expresiones regulares simples utilizando ANTLR4 y
 5. *Visual Studio Code*: Se recomienda para editar y ejecutar el código de forma cómoda.
 
 # Instalación
-Clona este repositorio: git clone https://github.com/piacts/51947.git
+Clone este repositorio utilizando el siguiente comando desde una terminal compatible con Git: git clone https://github.com/piacts/51947.git
 
 # Consideración importante al abrir el proyecto
 Al descargar o clonar este repositorio, se generará una carpeta principal llamada `51947`. No se recomienda abrir directamente esta carpeta en Visual Studio Code, ya que no contiene los archivos fuente del proyecto en su raíz.
@@ -78,8 +78,9 @@ Estos archivos contienen expresiones regulares válidas e inválidas respectivam
 # Notas Adicionales
 1. Si el archivo `input.txt` no existe o está vacío, el programa solicitará la expresión regular desde teclado.
 2. Bibliografía importante: [Guía de Estudio Construcción de Analizador con ANTLR4 + JavaScript.pdf](https://github.com/user-attachments/files/20275587/Guia.de.Estudio.Construccion.de.Analizador.con.ANTLR4.%2B.JavaScript.pdf)
-3. Caracteres válidos: [a-zA-Z0-9_~@?#%&=<>!;,/]  
-4. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
+3. Caracteres válidos: letras (a–z, A–Z), dígitos (0–9) y los siguientes símbolos: _ ~ @ ? # % & = < > ! ; , /
+4. Si desea probar el análisis léxico, puede ingresar un carácter inválido, como por ejemplo el símbolo "$".
+5. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
 
 # Autor
 **Nombre y Apellido:** Pía Cortes
