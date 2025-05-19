@@ -78,7 +78,8 @@ Estos archivos contienen expresiones regulares válidas e inválidas respectivam
 # Notas Adicionales
 1. Si el archivo `input.txt` no existe o está vacío, el programa solicitará la expresión regular desde teclado.
 2. Bibliografía importante: [Guía de Estudio Construcción de Analizador con ANTLR4 + JavaScript.pdf](https://github.com/user-attachments/files/20275587/Guia.de.Estudio.Construccion.de.Analizador.con.ANTLR4.%2B.JavaScript.pdf)
-3. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
+3. Caracteres válidos: [a-zA-Z0-9_~@?#%&=<>!;,/]  
+4. No se permite el uso de secuencias de escape como `\d`, `\w`, etc., en esta versión básica.
 
 # Autor
 **Nombre y Apellido:** Pía Cortes
